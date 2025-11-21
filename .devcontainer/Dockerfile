@@ -41,7 +41,7 @@ RUN pip3 install --no-cache-dir --break-system-packages \
     scikit-learn \
     plotly \
     pyarrow \
-    clickhouse-driver
+    clickhouse-driver[numpy,lz4]
 
 # Instalar pacotes R necessários
 RUN R -e "install.packages(c('IRkernel', 'languageserver'), repos='https://cloud.r-project.org', Ncpus=2)"
